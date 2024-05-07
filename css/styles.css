@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "Fredoka One, cursive";
+  src: url(../fuentes/FredokaOne-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fredoka One", cursive;
+  font-weight: 400;
+  background-color: #f57d1f;
+  padding: 20px 20px;
+}
+
+.title {
+  font-size: 32px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+#seleccionar-mascota {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tarjetas,
+.tarjetas-ataques {
+  display: flex;
+  gap: 10px;
+}
+
+.boton-mokepon {
+  width: 200px;
+  height: 212px;
+  background-color: #ebf400;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.img-mokepon {
+  width: 150px;
+  margin: auto;
+}
+input {
+  display: none;
+}
+
+input:checked + label {
+  background-color: #4793af;
+  
+}
+
+#boton-mascota {
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  background: #ebf400;
+  border: 2px solid white;
+  color: #000000;
+  font-family: "Fredoka One", cursive;
+  margin-top: 20px;
+}
+
+#seleccionar-ataque {
+  flex-direction: column;
+  align-items: center;
+}
+
+.boton-ataque {
+  background: #ebf400;
+  border-radius: 20px;
+  border-color: transparent;
+  padding: 10px;
+  width: 100px;
+  color: #000000;
+  font-family: "Fredoka One", cursive;
+}
+
+.boton-ataque:hover{
+  cursor: pointer;
+  background-color: #4793af;
+} 
+
+#mensajes {
+  width: 280px;
+  background: #eeeeee;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Fredoka One", cursive;
+}
+#boton-reiniciar {
+  border: none;
+  color: #11468f;
+}
+.ataques {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  text-align: center;
+  margin-top: 20px;
+  gap: 40px;
+}
+
+.ataques-jugador,
+.ataques-enemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Fredoka One", cursive;
+  border-radius: 10px;
+  padding: 10px;
+  background: #eeeeee;
+}
+
+@media (max-width: 480px) {
+  .tarjetas {
+    flex-direction: column;
+  }
+  .tarjetas-ataques {
+    flex-direction: column;
+  }
+}
